@@ -1,0 +1,24 @@
+# SPDX-FileCopyrightText: 2026 TiQuon_
+# SPDX-License-Identifier: CC-BY-NC-4.0
+# Attribution required. Commercial use requires a separate written license
+# from the copyright owner (see COMMERCIAL.md). Contributions: see CLA.md.
+
+# Profile linking Talos CraftIA to the VevanLand lore (sibling folder).
+# Lore content is NOT copied into this repository.
+
+name = "vevanland"
+display_name = "VevanLand"
+mc_version = "1.21.1"
+
+# Paths are relative to the Minecraft workspace root (parent of CraftIA/).
+lore_root = "../VevanLand/info"
+key_docs = [
+  "Lugares/isla_tutorial.md",
+  "Reglas/foreshadow_himinbjorg.md",
+  "Tutorial/minicapitulos/README.md",
+  "Historia.md",
+]
+
+[defaults]
+style_pack = "nordic_ruins_gold"
+first_structure = "templo_intro"

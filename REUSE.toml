@@ -1,0 +1,36 @@
+# SPDX-FileCopyrightText: 2026 TiQuon_
+# SPDX-License-Identifier: CC-BY-NC-4.0
+
+version = 1
+
+[[annotations]]
+path = [
+  "LICENSES/**",
+  "LICENSE",
+]
+SPDX-FileCopyrightText = "2026 TiQuon_"
+SPDX-License-Identifier = "PolyForm-Noncommercial-1.0.0"
+
+[[annotations]]
+path = [
+  "workspace/.gitkeep",
+  "engine/.gitkeep",
+  "web/.gitkeep",
+  "mod/.gitkeep",
+  "**/*.gitkeep",
+  "core/uv.lock",
+]
+SPDX-FileCopyrightText = "2026 TiQuon_"
+SPDX-License-Identifier = "CC-BY-NC-4.0"
+
+[[annotations]]
+path = [
+  "presets/**/*.toml",
+  "profiles/**/*.toml",
+  "identity.toml",
+  "craftia.toml.example",
+  "CITATION.cff",
+  "REUSE.toml",
+]
+SPDX-FileCopyrightText = "2026 TiQuon_"
+SPDX-License-Identifier = "CC-BY-NC-4.0"

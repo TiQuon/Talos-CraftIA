@@ -1,0 +1,24 @@
+# SPDX-FileCopyrightText: 2026 TiQuon_
+# SPDX-License-Identifier: CC-BY-NC-4.0
+# Attribution required. Commercial use requires a separate written license
+# from the copyright owner (see COMMERCIAL.md). Contributions: see CLA.md.
+
+[current]
+project_name = "Talos CraftIA"
+slug = "talos_craftia"
+mod_id = "talos_craftia"
+mod_name = "Talos CraftIA"
+java_group = "dev.tiquon.talos_craftia"
+python_pkg = "talos_craftia_core"
+rust_prefix = "talos_craftia-"
+github_owner = "TiQuon"
+github_repo = "Talos-CraftIA"
+project_url = "https://github.com/TiQuon/Talos-CraftIA"
+author = "TiQuon_"
+license_code = "PolyForm-Noncommercial-1.0.0"
+license_data = "CC-BY-NC-4.0"
+
+[legacy]
+# Previous technical ids accepted by readers (empty until a rename).
+slugs = []
+mod_ids = []

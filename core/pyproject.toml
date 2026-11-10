@@ -1,0 +1,48 @@
+# SPDX-FileCopyrightText: 2026 TiQuon_
+# SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "talos-craftia-core"
+version = "0.1.0"
+description = "Talos CraftIA orchestrator foundations (config, doctor, identity)."
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+license = { text = "PolyForm-Noncommercial-1.0.0" }
+authors = [{ name = "TiQuon_" }]
+keywords = ["minecraft", "ai", "source-available"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "License :: Other/Proprietary License",
+  "Private :: Do Not Upload",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+  "tomli>=2.0.1; python_version < '3.11'",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.6",
+]
+
+[project.scripts]
+talos-craftia = "talos_craftia_core.cli:main"
+craftia = "talos_craftia_core.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

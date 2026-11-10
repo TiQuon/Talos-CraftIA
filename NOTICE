@@ -1,0 +1,25 @@
+# SPDX-FileCopyrightText: 2026 TiQuon_
+# SPDX-License-Identifier: CC-BY-NC-4.0
+
+Required Notice: Copyright 2026 TiQuon_ (https://github.com/TiQuon/Talos-CraftIA)
+
+Talos CraftIA
+Copyright 2026 TiQuon_
+
+This project is source-available under PolyForm Noncommercial License 1.0.0
+for software, and Creative Commons Attribution-NonCommercial 4.0 International
+for data, prompts, YAML presets, and documentation. Commercial use requires a
+separate written license from the copyright owner. See LICENSE, COMMERCIAL.md,
+and CLA.md.
+
+AI assistance
+Parts of this project may have been designed or written with AI assistance.
+Parts are not itemized.
+
+Third-party
+No third-party code is vendored in this initial release. If code is adapted
+from MIT-licensed projects (for example blockwright), their notices will be
+listed here. AGPL/GPL code is not accepted into the engine or orchestrator.
+Minecraft and NeoForge are trademarks of their respective owners; this project
+is not affiliated with Mojang or Microsoft. Game jars and textures are not
+redistributed.

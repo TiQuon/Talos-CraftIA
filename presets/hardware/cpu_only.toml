@@ -1,0 +1,35 @@
+# SPDX-FileCopyrightText: 2026 TiQuon_
+# SPDX-License-Identifier: CC-BY-NC-4.0
+# Attribution required. Commercial use requires a separate written license
+# from the copyright owner (see COMMERCIAL.md). Contributions: see CLA.md.
+
+config_version = 1
+
+[hardware]
+preset = "cpu_only"
+
+[quality]
+mode = "draft"
+max_wall_time_min = 180
+max_cost_usd = 2.0
+
+[providers.local_small]
+adapter = "openai_compatible"
+base_url = "http://127.0.0.1:11434/v1"
+model = "<local-small-cpu-model>"
+context = 4096
+
+[providers.cloud_strong]
+adapter = "openai_compatible"
+base_url = "https://api.openai.com/v1"
+model = "<api-model>"
+api_key_env = "CRAFTIA_API_KEY"
+
+[roles.planner]
+chain = ["cloud_strong", "local_small"]
+
+[roles.detailer]
+chain = ["local_small"]
+
+[roles.critic_vision]
+chain = ["cloud_strong"]

@@ -1,0 +1,71 @@
+# SPDX-FileCopyrightText: 2026 TiQuon_
+# SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
+
+# --- Private / local planning (NOT published) ---
+plans/
+estado.md
+
+# --- Secrets and local config ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+**/api_keys*
+craftia.toml
+talos_craftia.toml
+!.env.example
+
+# --- Runtime workspace (catalogs, caches, jobs, traces) ---
+workspace/*
+!workspace/.gitkeep
+
+# --- Python ---
+.venv/
+**/.venv/
+venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Rust ---
+target/
+**/*.rs.bk
+
+# --- Node / web (future) ---
+node_modules/
+web/dist/
+web/.vite/
+
+# --- Java / Gradle (future mod) ---
+mod/.gradle/
+mod/build/
+mod/run/
+mod/runs/
+*.class
+
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+.vscode/
+!.vscode/extensions.json
+
+# --- Generated / local dumps ---
+*.log
+*.tmp
+.cache/
